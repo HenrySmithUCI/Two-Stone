@@ -10,7 +10,7 @@ public class InputManager : MonoBehaviour {
         {
             gameObject.AddComponent<TouchInput>();
         }
-        else if(rp == RuntimePlatform.WindowsEditor || rp == RuntimePlatform.WindowsPlayer)
+        else if(rp == RuntimePlatform.WindowsEditor || rp == RuntimePlatform.WindowsPlayer || rp == RuntimePlatform.WebGLPlayer)
         {
             gameObject.AddComponent<MouseInput>();
         }
